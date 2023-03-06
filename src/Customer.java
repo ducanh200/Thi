@@ -1,12 +1,12 @@
 class Customer {
     private String name;
     private String email;
-    private String phone;
+    private String phonenumber;
 
-    public Customer(String name, String email, String phone) {
+    public Customer(String name, String email, String phonenumber) {
         this.name = name;
         this.email = email;
-        this.phone = phone;
+        this.phonenumber = phonenumber;
     }
 
     public String getName() {
@@ -17,7 +17,7 @@ class Customer {
         return email;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPhonenumber() {
+        return phonenumber;
     }
 }

@@ -9,7 +9,7 @@ public class CustomerManagement {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\nCustomer Relationship Management");
+            System.out.println("\nCustomer Management :");
             System.out.println("1. Add new customer");
             System.out.println("2. Find by name");
             System.out.println("3. Display all");
@@ -60,7 +60,7 @@ public class CustomerManagement {
             Customer customer = customers.get(name);
             System.out.println("\nName : " + customer.getName());
             System.out.println("Email : " + customer.getEmail());
-            System.out.println("Phone : " + customer.getPhone());
+            System.out.println("Phone : " + customer.getPhonenumber());
         } else {
             System.out.println("Not found.");
         }
@@ -72,7 +72,7 @@ public class CustomerManagement {
             Customer customer = entry.getValue();
             System.out.println("\nName : " + customer.getName());
             System.out.println("Email : " + customer.getEmail());
-            System.out.println("Phone : " + customer.getPhone());
+            System.out.println("Phone : " + customer.getPhonenumber());
         }
     }
 }
